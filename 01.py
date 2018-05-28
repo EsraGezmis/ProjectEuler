@@ -1,22 +1,25 @@
-i=1
-n=10
-s=0
-for i in range(0,10):
-	if i<10/5:
-		s+=5*i
-		
-print(s)
 
-i=1
-n=10
-t=0
-for i in range(0,10):
-	if i<10/3:
-		t+=3*i
-	
-print(t)
+# coding: utf-8
 
-x=t+s
+# In[136]:
+
+
+list=[]
+for i3 in range(0,1000):
+    s=3*i3
+    if s<1000:
+        list.append(s)
+
+for i5 in range(0,1000):
+    s=5*i5
+    if s % 3!=0:
+        if s<1000:
+            list.append(s)
+#print(list)
+
+x=sum(list)
+
 print(x)
-	
-	
+        
+
+
